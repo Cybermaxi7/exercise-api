@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "json-server": "^0.17.4"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "exercise-api",
+  "description": "## Overview",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cybermaxi7/exercise-api.git"
+  },
+  "author": "cybermaxi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cybermaxi7/exercise-api/issues"
+  },
+  "homepage": "https://github.com/cybermaxi7/exercise-api#readme"
 }
