@@ -1,12 +1,10 @@
 const jsonServer = require("json-server");
-const customRoutes = require("./customRoutes");
 
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
-// Custom route for exercise search
-server.use("/exercises", customRoutes);
+
 
 server.use(middlewares);
 server.use(router);
