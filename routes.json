@@ -1,0 +1,5 @@
+{
+    "/exercises/:id": "/exercisesById/:id",
+    "/exercises?name=:name": "/exercises?name=:name"
+
+}
