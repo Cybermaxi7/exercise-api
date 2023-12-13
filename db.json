@@ -1,5 +1,6 @@
 {
-    "exercises":  [
+    "exercise" : 
+    [
         {
             "bodyPart": "waist",
             "equipment": "body weight",
