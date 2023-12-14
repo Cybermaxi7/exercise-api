@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "cors": "^2.8.5",
     "json-server": "^0.17.4"
   },
   "scripts": {
@@ -9,7 +10,6 @@
   "description": "## Overview",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cybermaxi7/exercise-api.git"

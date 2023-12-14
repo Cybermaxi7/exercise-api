@@ -1,10 +1,13 @@
 const jsonServer = require('json-server');
 const customRoutes = require('./customRoutes');
+const cors = require('cors');
 
 const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
+// Enable cors for routes
+server.use(cors());
 // Custom route for exercise search
 server.use('/exercises', customRoutes);
 
