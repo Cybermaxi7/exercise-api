@@ -7,7 +7,8 @@ const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
 // Enable CORS for a specific origin
-server.use(cors({ origin: "https://exercise-hub.vercel.app" }));
+const allowedOrigins = ["http://localhost:5173", "https://exercise-hub.vercel.app" ]
+server.use(cors({ origin: allowedOrigins }));
 // Custom route for exercise search
 server.use("/exercises", customRoutes);
 
