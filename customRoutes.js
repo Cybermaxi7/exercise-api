@@ -5,6 +5,12 @@ module.exports = (req, res, next) => {
   
       if (db && db.exercises) {
         let filteredExercises = db.exercises;
+
+        if (id) {
+          // Search by ID
+          const exerciseById = db.exercises.find(exercise => exercise.id === id);
+          res.json(exerciseById ? [exerciseById] : []);
+        }
   
         if (name) {
           // Filter by name
